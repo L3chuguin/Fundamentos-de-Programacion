@@ -16,6 +16,6 @@ def mostrar_notas(coleccionNotas):
     print(f"Hola, {coleccionNotas[0]}")
     print("Tus notas en el primer cuatrimestre son:")
     print(f"Teoría: {nota_teoria(coleccionNotas[1], coleccionNotas[2])}, Práctica: {coleccionNotas[5]}, Cuatrimestre: {nota_cuatrimestre((coleccionNotas[1], coleccionNotas[2]), coleccionNotas[5])}")
-    print("Tus notas tel segundo cuatrimestre son:")
+    print("Tus notas del segundo cuatrimestre son:")
     print(f"Teoría: {nota_teoria(coleccionNotas[3], coleccionNotas[4])}, Práctica: {coleccionNotas[6]}, Cuatrimestre: {nota_cuatrimestre((coleccionNotas[3], coleccionNotas[4]), coleccionNotas[6])}")
     print(f"Tu nota final de la asignatura es: {nota_continua((coleccionNotas[1], coleccionNotas[2], coleccionNotas[3], coleccionNotas[4]), (coleccionNotas[5], coleccionNotas[6]))}")
