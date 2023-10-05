@@ -14,8 +14,13 @@ def lee_entrenos(ruta):
         for linea in f:
             aux = linea.split('.')
             tipo = aux[0]
-            fechahora = datetime.strptime[1, '%d/%m/%Y %H:%M']
-            
+            fechahora = datetime.strptime(aux[1,'%d/%m/%Y %H:%M'])
+            ubicacion = aux[2]
+            duracion = int(aux[3])
+            calorias = int(aux[4])
+            distancia = float(aux[5])
+            frecuencia = int(aux[6])
+            compartido = aux[7]
             respuesta.append(linea.split('.'))
     return respuesta
 def tipos_entrenos(entrenos):
@@ -28,3 +33,4 @@ def tipos_entrenos(entrenos):
     respuesta = set()
     for e in entrenos:
         respuesta.add(e.tipo)
+    return respuesta
